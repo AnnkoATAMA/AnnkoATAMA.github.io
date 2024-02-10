@@ -12,7 +12,7 @@ a {
   text-decoration: none;
 }
 
-.container {
+.containers {
     width: 100vw;
     height: 100%;
     display: flex;
@@ -61,7 +61,7 @@ a {
     background-color: #ffffff;
     border: 0cap;
     padding: 10px 10px;
-    
+
 }
 .page_button {
     display: block;
@@ -108,4 +108,41 @@ a {
 
 .program-title {
     color: #ffffff;
+}
+
+.font-type {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  transition: height 1s ease; /* 新しいトランジションを追加 */
+}
+
+.container.open {
+  height: 100%; /* 適切な高さに変更してください */
+}
+
+.left-pane, .right-pane {
+  flex: 1;
+  height: 100%;
+  background-color: #ffffff;
+  border: 3px solid #865403;
+  transform-origin: left center;
+  transition: transform 1s ease;
+}
+
+.left-pane {
+  background-color: #ffffff;
+  border:3px solid #865403;
+}
+
+.container.open .left-pane {
+  transform: translateX(-100%);
+}
+
+.container.open .right-pane {
+  transform: translateX(100%);
 }

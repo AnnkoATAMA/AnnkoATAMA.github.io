@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AnnkoATAMA</title>
     </head>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <div class="container" onclick="toggleOpen()">
+        <div class="left-pane"></div>
+        <div class="right-pane"></div>
+    </div>    
 <body>
+ 
     <!-- ページトップに戻るボタン -->
     <a href="#" id="page-top">↑</a>
 
     <!-- リポジトリセクション -->
-    <section id="repository">
+    <section id="repository" class="font-type">
         <h1 class="section-title">My Repository</h1>
-        <div class="container">
+        <div class="containers">
             <h3 class="program-title">HorseRaceGame</h3>
             <div>
                 <video controls width="684">
@@ -35,11 +40,14 @@
     </section>
 
     <div class="right">
-        <a class="page_button" href="csscode.html">next page</a>
+        <div class="font-type">
+            <a class="page_button" href="secondPage.html">next page</a>
+        </div>
     </div>
 </body>
-<footer class="container">
+<footer class="containers">
     <p>GitHub アイコン by <a href="https://icons8.com">Icons8</a></p>
     ©2024 AnnkoATAMA
 </footer>
+<script src="js/openPage.js"></script>
 </html>
